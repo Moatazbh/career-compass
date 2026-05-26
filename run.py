@@ -1,5 +1,3 @@
-#from src.scraper.job_scraper import scrape_fake_jobs  
-#from src.processing.cleaner import clean_jobs
 from src.utils import save_jobs_to_csv, save_jobs_to_json, save_top_items_to_csv
 from src.processing.analyzer import count_by_field, get_top_items
 from src.api.arbeitnow_api import fetch_arbeitnow_data
@@ -101,37 +99,6 @@ def main():
     print("- data/reports/top_titles.csv")
 
 
-
-    #jobs = scrape_fake_jobs()
-    #cleaned_jobs = clean_jobs(jobs)
-
-
-    #title_counts = count_by_field(cleaned_jobs, "title")
-    #top_titles = get_top_items(title_counts, 5)
-    #company_counts = count_by_field(cleaned_jobs, "company")
-    #top_companies = get_top_items(company_counts, 5)
-    #location_counts = count_by_field(cleaned_jobs, "location")
-    #top_locations = get_top_items(location_counts, 5)
-
-
-
-    #save_jobs_to_json(cleaned_jobs, "data/cleaned/jobs_cleaned.json")
-    #save_jobs_to_csv(
-        #cleaned_jobs,
-        #"data/cleaned/jobs_cleaned.csv",
-        #["title", "company", "location", "link", "detail_title", "date", "description"]
-    
-    #if cleaned_jobs:
-        #print('First Cleaned Job:', cleaned_jobs[0])
-
-        #print("\nTop Job Titles:")
-        #print(top_titles)
-
-        #print("\nTop Companies:")
-        #print(top_companies)
-
-        #print("\nTop Locations:")
-        #print(top_locations)
     
 
 
